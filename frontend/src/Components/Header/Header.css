@@ -1,0 +1,19 @@
+img{
+}
+.header{
+    height: 89vh;
+    /* padding: 100px; */
+    background:linear-gradient(145deg,rgba(0, 0, 0, 0.3),rgba(241, 227, 227, 0.4)),url('https://cdn.wallpapersafari.com/49/31/roeqOv.png');
+    background-position: center;
+    background-size: cover;
+}
+.header_box{
+    /* padding: 200px; */
+    /* text-align: center; */
+    /* display: inline-table; */
+    color: white;
+}
+.header_box img{
+    width:60%;
+    margin-top: 80px;
+}
