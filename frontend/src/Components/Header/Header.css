@@ -1,19 +1,24 @@
-img{
-}
-.header{
+
+.header {
     height: 89vh;
-    /* padding: 100px; */
-    background:linear-gradient(145deg,rgba(0, 0, 0, 0.3),rgba(241, 227, 227, 0.4)),url('https://cdn.wallpapersafari.com/49/31/roeqOv.png');
+    background: linear-gradient(145deg, rgba(249, 247, 247, 1), rgba(235, 232, 232, 0)), url('https://cdn.wallpapersafari.com/49/31/roeqOv.png');
     background-position: center;
     background-size: cover;
-}
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+  }
 .header_box{
     /* padding: 200px; */
     /* text-align: center; */
     /* display: inline-table; */
-    color: white;
+    color: rgb(0, 0, 0);
+    font-size: larger;
 }
-.header_box img{
-    width:60%;
-    margin-top: 80px;
-}
+.header_box .col-md-7 img {
+    position: relative;
+    bottom: 0;
+    margin-bottom: 0 !important;
+    width: 60%;
+  }
