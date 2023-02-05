@@ -1,0 +1,17 @@
+.nav-link{
+    color:rgb(246, 240, 240);
+    font-weight: 700;
+    margin-left: 15px;
+}
+.nav-link:hover{
+    color:aquamarine
+}
+.navbar-brand{
+    font-size: x-large;
+    font-weight: bolder;
+    font-style: italic;
+    color: white;
+}
+.navbar-brand:hover{
+    color:white;
+}
