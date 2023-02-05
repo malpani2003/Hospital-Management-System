@@ -4,7 +4,7 @@ import './Header.css'
 class Navbar extends Component {
     render() {
         return (
-                <nav className="navbar navbar-expand-lg bg-light">
+                <nav className="navbar navbar-expand-sm bg-light">
                     <div className="container-fluid">
                         <a className="navbar-brand" href="#">Care Digital</a>
                         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -13,7 +13,7 @@ class Navbar extends Component {
                         <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
                             <div className="navbar-nav">
                                 <a className="nav-link" href="#">About</a>
-                                <a className="nav-link" href="#">Doctors</a>
+                                {/* <a className="nav-link" href="#">Doctors</a> */}
                                 <a className="nav-link" href="#">Book Appointment</a>
                                 <a className="nav-link" href="#">Contact Us</a>
                             </div>

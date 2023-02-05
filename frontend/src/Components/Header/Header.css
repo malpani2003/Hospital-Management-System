@@ -1,12 +1,11 @@
 
 .header {
     height: 89vh;
-    background: linear-gradient(145deg, rgba(249, 247, 247, 1), rgba(235, 232, 232, 0)), url('https://cdn.wallpapersafari.com/49/31/roeqOv.png');
+    background:url('https://sgmh.org/wp-content/uploads/2017/11/1.jpg');
+    /* background: linear-gradient(145deg, rgba(249, 247, 247, 0.4), rgba(235, 232, 232, 0.5)), url('https://tse4.mm.bing.net/th?id=OIP.4mqM0kXmA192bS_gRFMXWAHaDB&pid=Api&P=0'); */
     background-position: center;
     background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    
     color: black;
   }
 .header_box{
@@ -14,11 +13,47 @@
     /* text-align: center; */
     /* display: inline-table; */
     color: rgb(0, 0, 0);
-    font-size: larger;
+    /* font-size: larger; */
 }
-.header_box .col-md-7 img {
-    position: relative;
+.header_box .col-lg-6 img {
+    /* position: relative; */
     bottom: 0;
     margin-bottom: 0 !important;
-    width: 60%;
+    width: 82%;
+    height:auto;
   }
+.header_box .Info{
+    /* text-align: center; */
+    /* display: flex; */
+    margin-top:10%;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+}
+.header_box p{
+    font-size: large;
+}
+.header_box h1{
+    /* background-color:aqua; */
+    /* border-radius: 20px; */
+    /* padding: 15px; */
+    font-size: 250%;
+}
+@media screen and (max-width:992px) {
+    .header_box .col-lg-6 img{
+        width:50%;
+        margin: auto;
+        display: block;
+        margin-top: 20px;
+    }
+    .header_box .Info{
+        /* text-align: center; */
+        /* display: flex; */
+        margin-top:0%;
+        margin-bottom: 20px;
+    }
+    .header_box h1{
+        text-align: center;
+    }
+    
+}
