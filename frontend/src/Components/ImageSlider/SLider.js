@@ -55,9 +55,13 @@ class SLider extends Component {
     }
     render() {
         return (
-            <div className='Doctor_List'>
+            <div className='Doctor_List container-fluid'>
                 <h2 className='text-center my-3'>Our Doctors</h2>
-                <div className='card DoctorCard'>
+                <div className='row'>
+                    <div className='col-sm-2'>
+                    <button className='btn btn-danger' onClick={this.nextImage}>Next</button>
+                    </div>
+                <div className='card DoctorCard col-auto'>
                     <div className='card-body' key={this.state.id}>
                     <img src={this.state.Link}></img>
                     <h2>{this.state.Name}</h2>
@@ -69,10 +73,16 @@ class SLider extends Component {
                     </div>
 
                 </div>
-                <div className='btnGrp'>
+                <div className='col-sm-2'>
+                <button className='btn btn-success' onClick={this.prevImage}>Pervious</button>
+
+                    </div>
+
+                </div>
+                {/* <div className='btnGrp'>
                     <button className='btn btn-danger' onClick={this.nextImage}>Next</button>
                     <button className='btn btn-success' onClick={this.prevImage}>Pervious</button>
-                </div>
+                </div> */}
 
             </div>
         )
