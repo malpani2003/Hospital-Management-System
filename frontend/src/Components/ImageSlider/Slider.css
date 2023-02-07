@@ -1,35 +1,43 @@
 .Doctor_List img{
-    width:100%;
+    width:60%;
     margin: auto;
     display: block;
-    margin: 0;
+    /* margin: 0; */
+    border-radius: 100%;
     padding: 0% !important;
     /* border-radius: 10px; */
 }
 .Doctor_List .btn{
-    margin: auto;
-    display: inline-block;
-    margin: 0 5px;
+    /* margin: auto; */
+    /* display: inline-block; */
+    /* margin: 0 5px; */
     /* display: block; */
 }
-.Doctor_List .btnGrp{
+
+/* .Doctor_List .btnGrp{
     display: flex;
     flex-direction:row;
     align-items: center;
     justify-content: center;
     margin-top: 20px;
-}
+} */
 .DoctorCard{
     border: none;
     padding: 0%;
     margin: 0%;
-    border: 2px solid black;
-    box-shadow: 1px 1px 1px black;
-    filter: drop-shadow(2px 1px 2px #000000);
+    /* border: 2px solid black; */
+    /* box-shadow: 1px 1px 1px black; */
+    filter: drop-shadow(1px 1px 2px #000000);
     text-align: center;
-    width:30%;
+    width:35%;
     margin: auto;
     display: block;
+}
+@media(max-width:700px) {
+
+    .DoctorCard{
+        width: 50%;
+    }
 }
 .DoctorCard .card-footer{
 

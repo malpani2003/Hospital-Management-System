@@ -1,3 +1,6 @@
+nav{
+    border-bottom: 2px solid black;
+}
 .nav-link{
     color:rgb(0, 0, 0);
     font-weight: 700;
@@ -14,4 +17,9 @@
 }
 .navbar-brand:hover{
     color:rgb(0, 0, 0);
+}
+@media(max-width:575px){
+    .nav-link{
+        text-align: center;
+    }
 }
