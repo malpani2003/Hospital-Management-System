@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 import './Header.css'
 
 class Navbar extends Component {
@@ -6,16 +8,15 @@ class Navbar extends Component {
         return (
                 <nav className="navbar navbar-expand-sm bg-light">
                     <div className="container-fluid">
-                        <a className="navbar-brand" href="#">Care Digital</a>
+                        <Link className="navbar-brand" to="/">Care Digital</Link>
                         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                             <span className="navbar-toggler-icon"></span>
                         </button>
                         <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
                             <div className="navbar-nav">
-                                <a className="nav-link" href="#">About</a>
-                                {/* <a className="nav-link" href="#">Doctors</a> */}
-                                <a className="nav-link" href="#">Book Appointment</a>
-                                <a className="nav-link" href="#">Contact Us</a>
+                                <Link className="nav-link" to="/about">About</Link>
+                                <Link className="nav-link" to="/Book">Book Appointment</Link>
+                                <Link className="nav-link" to="/Contact">Contact Us</Link>
                             </div>
                         </div>
                     </div>
