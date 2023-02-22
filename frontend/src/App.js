@@ -6,19 +6,14 @@ import SLider from "./Components/ImageSlider/SLider";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import NoPage from "./Components/Error Page/NoPage";
 import AppointmentForm from "./Components/Booking_Form/Form";
+import { useLocation } from "react-router-dom";
 function App() {
+  // const location = useLocation();
+  // const currentPath = location.pathname;
   return (
     <div className="App">
       <Navbar></Navbar>
-      <Routes>
-        <Route path="/" element={<SLider />} />
-        <Route path="*" element={<NoPage />} />
-      </Routes>
-      <Header></Header>
-      <AppointmentForm></AppointmentForm>
-      <SLider></SLider>
       <Footer></Footer>
-      {/* <h1>Hospital Managment System</h1> */}
     </div>
   );
 }

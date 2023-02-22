@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 
-const Style={
-    "border":"2px solid black",
-    "padding":"20px"
+const Style = {
+    "border": "3px solid black",
+    "padding": "20px",
+    "borderRadius": "20px"
 }
 class AppointmentForm extends Component {
     constructor(props) {
@@ -22,16 +23,16 @@ class AppointmentForm extends Component {
     }
 
     handleInputChange = (event) => {
-        const { name, value } = event.target;
+        const { name, value, type } = event.target;
 
-        if (name == "symtoms" && value == 'others') {
-            this.setState({ DisplayOther: true });
-        }
-        else if (name == "symtoms" && value != "others") {
-            this.setState({ DisplayOther: false });
-
-        }
         this.setState({ [name]: value });
+        if (name == "symtoms" && value == 'others') {
+            this.setState({ DisplayOther: true, symtoms: ' ' });
+        }
+        else if (name == "symtoms" && type == "text") {
+            this.setState({ [name]: value });
+
+        }
 
     }
 
@@ -66,7 +67,7 @@ class AppointmentForm extends Component {
                 </div>
                 <div>
                     <label className="form-label">Department:</label>
-                    <select name="department" className="form-control"  value={this.state.department} onChange={this.handleInputChange}>
+                    <select name="department" className="form-control" value={this.state.department} onChange={this.handleInputChange}>
                         <option value="">Select department</option>
                         <option value="cardiology">Cardiology</option>
                         <option value="dermatology">Dermatology</option>
@@ -89,9 +90,9 @@ class AppointmentForm extends Component {
                         <option value="cold_flu">Cold / Flu</option>
                         <option value="others">Others</option>
                     </select>)}
-                    {this.state.DisplayOther && (<input type="text" name="symtoms" className="form-control my-2" placeholder="Enter Symptoms" value={this.state.date} onChange={this.handleInputChange} />)}
+                    {this.state.DisplayOther && (<input type="text" name="symtoms" id="symtoms" className="form-control my-2" placeholder="Enter Symptoms" value={this.state.symtoms} onChange={this.handleInputChange} />)}
                 </div>
-                <button type="submit" className="btn-outline-primary">Submit</button>
+                <button type="submit" className="btn-primary my-3">Submit</button>
             </form>
         );
     }
